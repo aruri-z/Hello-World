@@ -1,8 +1,16 @@
 const express = require('express')
 const app = express()
+const { User } = require('./models')
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
+app.get('/', async (req, res) => {
+  
+  try {
+    const users = await User.findAll()
+    res.send(users)
+  } catch (error) {
+    res.send(error)
+  }
+
 })
 
 app.listen(3001, () => {
