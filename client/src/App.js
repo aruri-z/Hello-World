@@ -10,9 +10,8 @@ function App() {
   useEffect(() => {
     async function fetchUsers() {
       try {
-        const res = await fetch('http://localhost:3001/users')
+        const res = await fetch(`${url}/users`)
         const users = await res.json()
-        console.log(users);
         setUsers(users)
       } catch (error) {
         console.log(error);
