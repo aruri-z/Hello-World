@@ -1,7 +1,6 @@
 {
-  "name": "Hello-World",
+  "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +17,12 @@
   },
   "homepage": "https://github.com/aruri-z/Hello-World#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "pg": "^8.5.1",
     "sequelize": "^6.5.1",
     "sequelize-cli": "^6.2.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
